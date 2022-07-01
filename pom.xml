@@ -31,8 +31,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
+<!--                THE LACK OF EXPLICIT VERSION IS OK(?) IT'S PULLED FROM THE VERSION ABOVE-->
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
 
